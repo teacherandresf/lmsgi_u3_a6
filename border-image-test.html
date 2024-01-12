@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borde con imágenes</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      margin: 40px;
+      float: left;
+    }
+
+    div:nth-child(1) {
+      border: 20px solid transparent;
+      border-image-source: url(hearts-border-image.png);
+      border-image-slice: 20 22;
+      border-image-repeat: round;
+      background-color: seashell;
+    }
+
+    div:nth-child(2) {
+      border: 20px solid transparent;
+      border-image-source: url(hearts-border-image.png);
+      border-image-slice: 40 42;
+      border-image-repeat: round;
+      background-color: seashell;
+    }
+
+    div:nth-child(3) {
+      border: 20px solid transparent;
+      border-image-source: url(hearts-border-image.png);
+      border-image-slice: 20 22;
+      border-image-outset: 1;
+      border-image-repeat: round;
+      background-color: seashell;
+    }
+
+    div:nth-child(4) {
+      border: 10px solid transparent;
+      padding: 15px;
+      border-image: url(border-orange.png) 30 round;
+    }
+
+    div:nth-child(5) {
+      border: 10px solid transparent;
+      padding: 15px;
+      border-image: url(border-orange.png) 30 stretch;
+    }
+
+    div:nth-child(6) {
+      border: 10px solid transparent;
+      padding: 15px;
+      border-image: url(border-orange.png) 50 round;
+    }
+
+    div:nth-child(7) {
+      border: 10px solid transparent;
+      padding: 15px;
+      border-image: url(border-orange.png) 20% round;
+    }
+
+    div:nth-child(8) {
+      border: 10px solid transparent;
+      padding: 15px;
+      border-image: url(border-orange.png) 30% round;
+    }
+
+    div:nth-child(9) {
+      border: 10px solid transparent;
+      padding: 15px;
+      border-image: url(border-orange.png) 10% repeat;
+    }
+
+  </style>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+</html>

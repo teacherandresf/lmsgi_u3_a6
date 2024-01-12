@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fondo</title>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        padding: 50px;
+        border: 20px dotted black;
+        margin: 50px;
+        float: left;
+      }
+
+      p {
+        line-height: 400px; 
+      }
+
+      div:nth-child(1) {
+        background: url(hoja.jpeg) 0 0 no-repeat;
+        background-origin: padding-box;
+        background-clip: border-box;
+      }
+
+      div:nth-child(2) {
+        background: url(hoja.jpeg) 0 0 no-repeat;
+        background-origin: border-box;
+        background-clip: padding-box;
+      }
+
+      div:nth-child(3) {
+        background: url(hoja.jpeg) 0 0 no-repeat;
+        background-origin: padding-box;
+        background-clip: padding-box;
+      }
+
+      div:nth-child(4) {
+        background: url(hoja.jpeg) 0 0 no-repeat;
+        background-origin: content-box;
+        background-clip: content-box;
+      }
+
+      div:nth-child(5) {
+        background: url(hoja.jpeg) 0 0 no-repeat;
+        background-origin: border-box;
+        background-clip: border-box;
+      }
+      div:nth-child(6) {
+        background: url(hoja.jpeg) 0 0 no-repeat;
+        background-origin: border-box;
+        background-clip: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div><p>Origin: Padding (*) / Clip: Border (*)</p></div>
+    <div><p>Origin: Border / Clip: Padding</p></div>
+    <div><p>Origin: Padding / Clip: Padding</p></div>
+    <div><p>Origin: Content / Clip: Content</p></div>
+    <div><p>Origin: Border / Clip: Border</p></div>
+    <div><p>Origin: Border / Clip: Content</p></div>
+  </body>
+</html>
